@@ -20,7 +20,7 @@ public class check {
 			ResultSet rs = null;
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				conn = DriverManager.getConnection("jdbc:mysql://localhost/hw3?user=root&password=hellodear&useSSL=false");
+				conn = DriverManager.getConnection("jdbc:mysql://localhost/hw3?user=root&password=hi&useSSL=false");
 				st = conn.createStatement();
 				String name = username;
 				ps = conn.prepareStatement("SELECT * FROM User WHERE username=?");
@@ -76,7 +76,7 @@ public class check {
 		PreparedStatement ps2 = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost/hw3?user=root&password=hellodear&useSSL=false");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/hw3?user=root&password=hi&useSSL=false");
 			st = conn.createStatement();
 			String name = username;
 			ps = conn.prepareStatement("SELECT * FROM User WHERE username=?");
@@ -133,7 +133,7 @@ public static void add(String search, String username_){
 		try
 	    {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost/hw3?user=root&password=hellodear&useSSL=false");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/hw3?user=root&password=hi&useSSL=false");
 			String myDriver = "com.mysql.cj.jdbc.Driver";
 		      Class.forName(myDriver);
 	      
@@ -181,7 +181,7 @@ public static void add(String search, String username_){
 	      // create our mysql database connection
 			  String myDriver = "com.mysql.cj.jdbc.Driver";
 			  Class.forName(myDriver);
-		      conn = DriverManager.getConnection("jdbc:mysql://localhost/hw3?user=root&password=hellodear&useSSL=false");
+		      conn = DriverManager.getConnection("jdbc:mysql://localhost/hw3?user=root&password=hi&useSSL=false");
 	
 		      ps = conn.prepareStatement("SELECT city FROM SearchHistory WHERE username = ?" );
 			  ps.setString(1, username); // set first variable in prepared statement
