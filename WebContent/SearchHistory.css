@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+html, body{
+	margin-top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+  font-family: light;
+  src: url('WebContent/images/AvenirNext-UltraLight.ttf');
+}
+
+#title{
+	padding-top: 10px;
+	position: relative;
+	color: white;
+	font-family: avenir;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+.table {
+	width: 320px;
+	height: 350px;
+  display: block;
+  overflow-y: scroll;
+  margin: 0px auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+th, td {
+  width:220px; 
+  height:35px;
+  padding: 3px;
+  padding-right: 50px; 
+  padding-left: 50px;
+  color: white;
+  font-size: 20px;
+  font-family: avenir;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+
+.topnav {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  width: 100%;
+}
+
+.topnav .wm{
+  float: left;
+  color: white;
+  background-color: black;
+  padding: 14px 40px;
+  padding-bottom: 0px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Savoye LET;
+}
+
+
+
+.topnav .links {
+  margin: 0;
+  margin-left:900px;
+  margin-top: 12px;
+  font-size: 10px;
+  color:white;
+  padding: 0;
+}
+
+
+
+
+
+#background{
+	margin: 0;
+	background-image: url("background.jpg");
+	background-color: #000000;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	left: -2px;
+	right: 0;
+	z-index: -1;
+	display: block;
+	height: 100%;
+	-webkit-filter: blur(2px);
+	filter: blur(2px); 
+}
+
+a{
+	
+	display: inline-block;
+	font-size: 250%;
+	font-family: Avenir;
+}
+
+#block{
+	display: block;
+	z-index: 1;
+	width: 320px;
+	height: 350px;
+	background-color:  rgba(255, 255, 255, 0.2);
+    margin: 0px auto;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.center{
+	margin-left: 4%;
+	width: 90%;
+	height: 25px;
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+
+#text{
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
+	margin-left: 4%;
+	color: white;
+	font-family: avenir;
+	font-size: 16px;
+}
